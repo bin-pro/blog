@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Bloggingggg</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- FontAwesome JS-->
+	<script defer src="static/fontawesome/js/all.min.js"></script>
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="static/css/theme-1.css">
+
+</head>
+    <body>
+        {% include "navbar.html" %}
+        {% block content %}
+        {% endblock %}
+    </body>
+        <!-- Javascript -->          
+    <script src="static/plugins/jquery-3.4.1.min.js"></script>
+    <script src="static/plugins/popper.min.js"></script> 
+    <script src="static/plugins/bootstrap/js/bootstrap.min.js"></script> 
+    
+    <!-- Page Specific JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="static/js/blog.js"></script>
+    
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <script src="static/js/demo/style-switcher.js"></script>     
+    
+</html>
+
