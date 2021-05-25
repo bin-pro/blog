@@ -1,3 +1,4 @@
+{% load static %}
 <header class="header text-center">	    
     <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Sub in Developing</a></h1>
     <nav class="navbar navbar-expand-lg navbar-dark" >
@@ -8,7 +9,7 @@
 
         <div id="navigation" class="collapse navbar-collapse flex-column" >
             <div class="profile-section pt-3 pt-lg-0">
-                <img class="profile-image mb-3 rounded-circle mx-auto" src="static/images/profile.jpg" alt="image" >			
+                <img class="profile-image mb-3 rounded-circle mx-auto" src="{% static 'images/profile.jpg' %}" alt="image" >			
 
                 <div class="bio mb-3">Hi, my name is Subin Lee. I hope to have a career of full-stack developer. <br>It can't be happier if I can collaborate with someone who has passion in this as much as I do!<br><a href="about.html">Find out more about me</a></div><!--//bio-->
                 <ul class="social-list list-inline py-3 mx-auto">
@@ -29,7 +30,7 @@
                     <a class="nav-link" href="blog-post.html"><i class="fas fa-bookmark fa-fw mr-2"></i>Blog Post</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
+                    <a class="nav-link" href="blog-about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
                 </li>
             </ul>
 
