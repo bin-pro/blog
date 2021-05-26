@@ -1,0 +1,34 @@
+고칠거
+
+Blog Home
+Blog Post
+About me
+삭제
+
+PlayList 삽입
+PlayList 드롭다운
+
+Find out more about me만 통해서 About.html파일 open
+Index의 post_list를 통해서만 post들 open
+
+
+Blog Home의 가로 nav bar에는 Categories
+배경 : 간지나는 코딩
+
+Opacity 0.7정도로 투명 div 내려서
+
+
+오늘 할 거 
+
+<Categories	Side Projects	Algorithms	English		Spanish	Movies	Musics(Make a PlayList)	Books 
+		-HTML/CSS/JS	-JavaScripts	-Sentences(quoted by book)
+		-Django		-Django		-Words(origin)
+		-Python		-Python		-
+>		
+subinblog/post/1=<int:post_id>
+subinblog/post/2
+subinblog/post/3
+.
+.
+.
+

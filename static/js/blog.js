@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	
 	/* ======= Highlight.js Plugin ======= */ 
     /* Ref: https://highlightjs.org/usage/ */     
     $('pre code').each(function(i, block) {
@@ -7,21 +6,20 @@ $(document).ready(function() {
 	 });
 
 });
+ $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
 
-const actidx = document.querySelector(".js-active__idx");
+      // Scrolling Effect
 
-const actpost = document.querySelector(".js-active__post");
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
 
-const actabt = document.querySelector(".js-active__about");
-
-function setActiveIcon(){
-    if (window.location.href == 'https://blog--lmknv.run.goorm.io/subinblog/'){
-        actidx.classList.add("active");
-        }
-    else if (window.location.href == '/subinblog/post'){
-        actpost.classList.add("active");
-    }
-    else if (window.location.href == 'subinblog/about'){
-        actabt.classList.add("active");
-    }
-}
+            else {
+                  $('nav').removeClass('black');
+            }
+      })

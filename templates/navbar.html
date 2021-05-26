@@ -1,8 +1,8 @@
 {% load static %}
 <header class="header text-center">	    
-    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Sub in Developing</a></h1>
+    <h1 class="blog-name pt-lg-4 mb-0"><a href="{%url 'subinblog:index'%}">Sub in Developing</a></h1>
     <nav class="navbar navbar-expand-lg navbar-dark" >
-
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -11,7 +11,7 @@
             <div class="profile-section pt-3 pt-lg-0">
                 <img class="profile-image mb-3 rounded-circle mx-auto" src="{% static 'images/profile.jpg' %}" alt="image" >			
 
-                <div class="bio mb-3">Hi, my name is Subin Lee. I hope to have a career of full-stack developer. <br>It can't be happier if I can collaborate with someone who has passion in this as much as I do!<br><a href="about.html">Find out more about me</a></div><!--//bio-->
+                <div class="bio mb-3">Hi, my name is Subin Lee. I hope to have a career of full-stack developer. <br>It can't be happier if I can collaborate with someone who has passion in this as much as I do!<br><a href="{%url 'subinblog:about'%}">Find out more about me</a></div><!--//bio-->
                 <ul class="social-list list-inline py-3 mx-auto">
                     <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
                     <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
@@ -22,6 +22,7 @@
                 <hr> 
             </div><!--//profile-section-->
             
+            <!--
             <ul class="navbar-nav flex-column text-left">
                 <li class="nav-item js-active__idx">
                     <a class="nav-link" href="{% url 'subinblog:index' %}"><i class="fas fa-home fa-fw mr-2"></i>Blog Home</a>            
@@ -33,9 +34,9 @@
                     <a class="nav-link" href="{% url 'subinblog:about' %}"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
                 </li>
             </ul>
-
+-->
             <div class="my-2 my-md-3">
-                <a class="btn btn-primary" href="https://themes.3rdwavemedia.com/" target="_blank">Get in Touch</a>
+                <a class="btn btn-primary" href="{%url 'subinblog:list'%}" target="_blank">List(test)</a>
             </div>
         </div>
     </nav>
